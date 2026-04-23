@@ -1,13 +1,133 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>grandelyn-app</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tugas P4 Wisata</title>
+
+  <!-- HUBUNGKAN CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <button class="guest-btn" onclick="showGuest()">Guest</button>
+  <button class="admin-btn" onclick="showAdmin()">Admin</button>
+</header>
+
+<div class="container">
+
+  <!-- FILTER -->
+  <div class="filter">
+    <input type="text" id="search" placeholder="Cari wisata..." onkeyup="render()">
+
+    <select id="kategori" onchange="render()">
+      <option value="">Semua Kategori</option>
+      <option>Pantai</option>
+      <option>Alam</option>
+    </select>
+
+    <select id="lokasi" onchange="render()">
+      <option value="">Semua Lokasi</option>
+      <option>Bali</option>
+      <option>Jawa Timur</option>
+    </select>
+  </div>
+
+  <!-- GUEST -->
+  <div id="guestView" class="grid"></div>
+
+  <!-- ADMIN -->
+  <div id="adminView" style="display:none;">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nama</th>
+          <th>Kategori</th>
+          <th>Lokasi</th>
+          <th>Rating</th>
+          <th>Harga</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script>
+  const data = [
+    {
+      id: 1,
+      nama: "Pantai Kuta",
+      kategori: "Pantai",
+      lokasi: "Bali",
+      rating: 4.7,
+      harga: 15000,
+      gambar: "https://picsum.photos/400/300?1"
+    },
+    {
+      id: 2,
+      nama: "Gunung Bromo",
+      kategori: "Alam",
+      lokasi: "Jawa Timur",
+      rating: 4.9,
+      harga: 30000,
+      gambar: "https://picsum.photos/400/300?2"
+    }
+  ];
+
+  function showGuest() {
+    document.getElementById("guestView").style.display = "grid";
+    document.getElementById("adminView").style.display = "none";
+  }
+
+  function showAdmin() {
+    document.getElementById("guestView").style.display = "none";
+    document.getElementById("adminView").style.display = "block";
+  }
+
+  function render() {
+    const search = document.getElementById("search").value.toLowerCase();
+    const kategori = document.getElementById("kategori").value;
+    const lokasi = document.getElementById("lokasi").value;
+
+    const filtered = data.filter(item =>
+      item.nama.toLowerCase().includes(search) &&
+      (kategori ? item.kategori === kategori : true) &&
+      (lokasi ? item.lokasi === lokasi : true)
+    );
+
+    // Guest
+    document.getElementById("guestView").innerHTML =
+      filtered.map(item => `
+        <div class="card">
+          <img src="${item.gambar}">
+          <div class="card-body">
+            <h3>${item.nama}</h3>
+            <p>${item.lokasi}</p>
+            <p>⭐ ${item.rating}</p>
+            <p class="price">Rp ${item.harga}</p>
+          </div>
+        </div>
+      `).join("");
+
+    // Admin
+    document.getElementById("tableBody").innerHTML =
+      filtered.map(item => `
+        <tr>
+          <td>${item.id}</td>
+          <td>${item.nama}</td>
+          <td>${item.kategori}</td>
+          <td>${item.lokasi}</td>
+          <td>${item.rating}</td>
+          <td>Rp ${item.harga}</td>
+        </tr>
+      `).join("");
+  }
+
+  render();
+</script>
+
+</body>
 </html>
