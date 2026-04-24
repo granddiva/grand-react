@@ -1,7 +1,7 @@
-import Tugasp4App from "./tugasp4/Tugasp4App";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
-  return <Tugasp4App />;
+  return <Dashboard />;
 }
 
 export default App;
