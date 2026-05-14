@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Mahasiswa</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Data Mahasiswa</h2>
+
+  <form id="form">
+    
+    <div class="form-group">
+      <label>Nama</label><br>
+      <input type="text" id="nama">
+      <div id="errNama" class="error"></div>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label><br>
+      <input type="text" id="email">
+      <div id="errEmail" class="error"></div>
+    </div>
+
+    <div class="form-group">
+      <label>Umur</label><br>
+      <input type="text" id="umur">
+      <div id="errUmur" class="error"></div>
+    </div>
+
+    <div class="form-group">
+      <label>Gender</label><br>
+      <select id="gender">
+        <option value="">Pilih</option>
+        <option>Laki-laki</option>
+        <option>Perempuan</option>
+      </select>
+      <div id="errGender" class="error"></div>
+    </div>
+
+    <div class="form-group">
+      <label>Jurusan</label><br>
+      <select id="jurusan">
+        <option value="">Pilih</option>
+        <option>Informatika</option>
+        <option>Sistem Informasi</option>
+        <option>Teknik Komputer</option>
+      </select>
+      <div id="errJurusan" class="error"></div>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="hasil"></div>
+
+  <script>
+    const form = document.getElementById("form");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let nama = document.getElementById("nama").value;
+      let email = document.getElementById("email").value;
+      let umur = document.getElementById("umur").value;
+      let gender = document.getElementById("gender").value;
+      let jurusan = document.getElementById("jurusan").value;
+
+      let valid = true;
+
+      // reset error
+      document.querySelectorAll(".error").forEach(e => e.innerHTML = "");
+
+      // validasi
+      if (!nama || /\d/.test(nama) || nama.length < 3) {
+        document.getElementById("errNama").innerHTML = "Nama tidak valid";
+        valid = false;
+      }
+
+      if (!email || !email.includes("@")) {
+        document.getElementById("errEmail").innerHTML = "Email tidak valid";
+        valid = false;
+      }
+
+      if (!umur || isNaN(umur) || umur < 17) {
+        document.getElementById("errUmur").innerHTML = "Umur tidak valid";
+        valid = false;
+      }
+
+      if (!gender) {
+        document.getElementById("errGender").innerHTML = "Pilih gender";
+        valid = false;
+      }
+
+      if (!jurusan) {
+        document.getElementById("errJurusan").innerHTML = "Pilih jurusan";
+        valid = false;
+      }
+
+      if (valid) {
+        document.getElementById("hasil").innerHTML = `
+          <h3>Hasil:</h3>
+          Nama: ${nama} <br>
+          Email: ${email} <br>
+          Umur: ${umur} <br>
+          Gender: ${gender} <br>
+          Jurusan: ${jurusan}
+        `;
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "wisata": [
+    {
+      "id": 1,
+      "nama": "Pantai Kuta",
+      "kategori": "Pantai",
+      "lokasi": "Bali",
+      "rating": 4.7,
+      "hargaTiket": 15000,
+      "gambar": "https://source.unsplash.com/400x300/?beach",
+      "detail": {
+        "deskripsi": "Pantai terkenal di Bali",
+        "jamBuka": "24 Jam",
+        "fasilitas": ["Toilet", "Parkir", "Cafe"]
+      },
+      "kontak": {
+        "telepon": "08123456789",
+        "email": "kuta@mail.com"
+      },
+      "koordinat": {
+        "lat": -8.717,
+        "lng": 115.168
+      }
+    },
+    {
+      "id": 2,
+      "nama": "Gunung Bromo",
+      "kategori": "Alam",
+      "lokasi": "Jawa Timur",
+      "rating": 4.9,
+      "hargaTiket": 30000,
+      "gambar": "https://source.unsplash.com/400x300/?mountain",
+      "detail": {
+        "deskripsi": "Gunung aktif",
+        "jamBuka": "24 Jam",
+        "fasilitas": ["Guide", "Jeep", "Parkir"]
+      },
+      "kontak": {
+        "telepon": "08987654321",
+        "email": "bromo@mail.com"
+      },
+      "koordinat": {
+        "lat": -7.942,
+        "lng": 112.953
+      }
+    }
+  ]
+}

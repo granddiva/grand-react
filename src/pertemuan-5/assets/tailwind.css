@@ -1,0 +1,13 @@
+/* Smooth UI */
+* {
+  @apply transition-all duration-200;
+}
+
+/* Scrollbar custom */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
