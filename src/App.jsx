@@ -8,6 +8,9 @@ import Orders from "./pages/Orders";
 import Customers from "./pages/Customers";
 import ErrorPage from "./pages/ErrorPage";
 import NotFound from "./pages/NotFound";
+import Products from "./pages/Products";
+import React from "react";
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
 
 export default function App() {
   return (
@@ -21,6 +24,8 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
 
           <Route
             path="/error400"

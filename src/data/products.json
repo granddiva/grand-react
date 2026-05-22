@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Mouse M330",
+    "code": "PROD-001",
+    "category": "Electronics",
+    "brand": "Logitech",
+    "price": 250000,
+    "stock": 45
+  },
+  {
+    "id": 2,
+    "title": "Mechanical Keyboard K8",
+    "code": "PROD-002",
+    "category": "Electronics",
+    "brand": "Keychron",
+    "price": 1200000,
+    "stock": 15
+  },
+  {
+    "id": 3,
+    "title": "Running Shoes Air Max",
+    "code": "PROD-003",
+    "category": "Shoes",
+    "brand": "Nike",
+    "price": 1800000,
+    "stock": 20
+  },
+  {
+    "id": 4,
+    "title": "Casual T-Shirt Cotton",
+    "code": "PROD-004",
+    "category": "Clothing",
+    "brand": "Uniqlo",
+    "price": 199000,
+    "stock": 100
+  },
+  {
+    "id": 5,
+    "title": "Stainless Steel Tumbler",
+    "code": "PROD-005",
+    "category": "Kitchenware",
+    "brand": "Thermos",
+    "price": 350000,
+    "stock": 60
+  },
+  {
+    "id": 6,
+    "title": "Smartphone Galaxy S24",
+    "code": "PROD-006",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "price": 15000000,
+    "stock": 10
+  },
+  {
+    "id": 7,
+    "title": "Wireless Earbuds AirBuds",
+    "code": "PROD-007",
+    "category": "Electronics",
+    "brand": "Anker",
+    "price": 450000,
+    "stock": 35
+  },
+  {
+    "id": 8,
+    "title": "Backpack Waterproof 25L",
+    "code": "PROD-008",
+    "category": "Bags",
+    "brand": "Eiger",
+    "price": 550000,
+    "stock": 25
+  },
+  {
+    "id": 9,
+    "title": "Classic Leather Wallet",
+    "code": "PROD-009",
+    "category": "Accessories",
+    "brand": "Fossil",
+    "price": 850000,
+    "stock": 12
+  },
+  {
+    "id": 10,
+    "title": "Instant Coffee Arabica",
+    "code": "PROD-010",
+    "category": "Food & Beverage",
+    "brand": "Nescafe",
+    "price": 45000,
+    "stock": 200
+  },
+  {
+    "id": 11,
+    "title": "Gaming Monitor 24 Inch",
+    "code": "PROD-011",
+    "category": "Electronics",
+    "brand": "ASUS",
+    "price": 2300000,
+    "stock": 8
+  },
+  {
+    "id": 12,
+    "title": "Chino Pants Slim Fit",
+    "code": "PROD-012",
+    "category": "Clothing",
+    "brand": "Zara",
+    "price": 499000,
+    "stock": 40
+  },
+  {
+    "id": 13,
+    "title": "Electric Kettle 1.5L",
+    "code": "PROD-013",
+    "category": "Appliances",
+    "brand": "Philips",
+    "price": 380000,
+    "stock": 18
+  },
+  {
+    "id": 14,
+    "title": "Smart Watch Series 9",
+    "code": "PROD-014",
+    "category": "Electronics",
+    "brand": "Apple",
+    "price": 6500000,
+    "stock": 14
+  },
+  {
+    "id": 15,
+    "title": "Running Socks 3-Pack",
+    "code": "PROD-015",
+    "category": "Clothing",
+    "brand": "Adidas",
+    "price": 150000,
+    "stock": 85
+  },
+  {
+    "id": 16,
+    "title": "Non-Stick Frying Pan",
+    "code": "PROD-016",
+    "category": "Kitchenware",
+    "brand": "Tefal",
+    "price": 299000,
+    "stock": 22
+  },
+  {
+    "id": 17,
+    "title": "Moisturizer Gel 50ml",
+    "code": "PROD-017",
+    "category": "Skincare",
+    "brand": "The Originote",
+    "price": 55000,
+    "stock": 150
+  },
+  {
+    "id": 18,
+    "title": "Sunscreen SPF 50",
+    "code": "PROD-018",
+    "category": "Skincare",
+    "brand": "Azarine",
+    "price": 65000,
+    "stock": 120
+  },
+  {
+    "id": 19,
+    "title": "Bluetooth Speaker Go 4",
+    "code": "PROD-019",
+    "category": "Electronics",
+    "brand": "JBL",
+    "price": 850000,
+    "stock": 19
+  },
+  {
+    "id": 20,
+    "title": "Denim Jacket Vintage",
+    "code": "PROD-020",
+    "category": "Clothing",
+    "brand": "Levi's",
+    "price": 1200000,
+    "stock": 7
+  },
+  {
+    "id": 21,
+    "title": "Powerbank 20000mAh",
+    "code": "PROD-021",
+    "category": "Electronics",
+    "brand": "Baseus",
+    "price": 350000,
+    "stock": 55
+  },
+  {
+    "id": 22,
+    "title": "Desk Lamp LED",
+    "code": "PROD-022",
+    "category": "Appliances",
+    "brand": "Xiaomi",
+    "price": 249000,
+    "stock": 33
+  },
+  {
+    "id": 23,
+    "title": "Leather Boots Classic",
+    "code": "PROD-023",
+    "category": "Shoes",
+    "brand": "Dr. Martens",
+    "price": 2700000,
+    "stock": 5
+  },
+  {
+    "id": 24,
+    "title": "Mineral Water 600ml x24",
+    "code": "PROD-024",
+    "category": "Food & Beverage",
+    "brand": "Aqua",
+    "price": 48000,
+    "stock": 300
+  },
+  {
+    "id": 25,
+    "title": "Laptop Yoga Slim 7",
+    "code": "PROD-025",
+    "category": "Electronics",
+    "brand": "Lenovo",
+    "price": 14500000,
+    "stock": 6
+  },
+  {
+    "id": 26,
+    "title": "Travel Pillow Memory Foam",
+    "code": "PROD-026",
+    "category": "Accessories",
+    "brand": "Miniso",
+    "price": 99000,
+    "stock": 42
+  },
+  {
+    "id": 27,
+    "title": "Screwdriver Set 24-in-1",
+    "code": "PROD-027",
+    "category": "Tools",
+    "brand": "Mijia",
+    "price": 185000,
+    "stock": 28
+  },
+  {
+    "id": 28,
+    "title": "Hair Dryer 1200W",
+    "code": "PROD-028",
+    "category": "Appliances",
+    "brand": "Panasonic",
+    "price": 320000,
+    "stock": 16
+  },
+  {
+    "id": 29,
+    "title": "Canvas Tote Bag",
+    "code": "PROD-029",
+    "category": "Bags",
+    "brand": "H&M",
+    "price": 149000,
+    "stock": 70
+  },
+  {
+    "id": 30,
+    "title": "Protein Bar Chocolate",
+    "code": "PROD-030",
+    "category": "Food & Beverage",
+    "brand": "L-Men",
+    "price": 15000,
+    "stock": 110
+  }
+]

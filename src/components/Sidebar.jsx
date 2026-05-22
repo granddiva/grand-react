@@ -10,11 +10,16 @@ export default function Sidebar() {
     }`;
 
   return (
-    <div className="w-64 bg-white p-4 shadow-lg">
-      <h1 className="text-2xl font-bold mb-6">My Admin</h1>
+    <div className="w-64 bg-white p-4 shadow-lg min-h-screen">
+      <h1 className="text-2xl font-bold mb-6 text-green-700">My Admin</h1>
 
       <NavLink to="/" className={menuClass}>
         Dashboard
+      </NavLink>
+
+      {/* Menu Products Baru Sesuai Gambar */}
+      <NavLink to="/products" className={menuClass}>
+        Products
       </NavLink>
 
       <NavLink to="/orders" className={menuClass}>
@@ -23,18 +28,6 @@ export default function Sidebar() {
 
       <NavLink to="/customers" className={menuClass}>
         Customers
-      </NavLink>
-
-      <NavLink to="/error400" className={menuClass}>
-        Error 400
-      </NavLink>
-
-      <NavLink to="/error401" className={menuClass}>
-        Error 401
-      </NavLink>
-
-      <NavLink to="/error403" className={menuClass}>
-        Error 403
       </NavLink>
     </div>
   );
