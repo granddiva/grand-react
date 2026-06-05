@@ -1,18 +1,74 @@
 import PageHeader from "../components/PageHeader";
+import { Button } from "@/components/ui/button";
 
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input"
 export default function FiturXyz() {
-    return (
-        <div className="fitur-xyz">
-            <PageHeader title="Fitur Xyz" />
-            <div className="content">
-                <p>
-                    Fitur Xyz adalah fitur terbaru yang kami tawarkan untuk meningkatkan pengalaman pengguna. Dengan Fitur Xyz, Anda dapat menikmati berbagai manfaat seperti kecepatan yang lebih tinggi, keamanan yang lebih baik, dan antarmuka yang lebih intuitif. Kami terus berkomitmen untuk menghadirkan inovasi yang dapat membantu Anda dalam berbagai aspek kehidupan digital Anda.
-                </p>
-                <p>
-                    Fitur Xyz dirancang dengan teknologi terkini untuk memastikan bahwa Anda mendapatkan performa terbaik. Kami juga menyediakan dukungan pelanggan yang siap membantu Anda jika Anda memiliki pertanyaan atau membutuhkan bantuan terkait Fitur Xyz. Jangan ragu untuk mencoba Fitur Xyz dan rasakan perbedaannya!
-                </p>
+  return (
+    <div className="fitur-xyz">
+      <PageHeader title="Fitur Xyz" />
+      <div className="content">
+        <p>ini halaman xyz</p>
+
+        <Button>TES</Button>
+        
+
+        <Card className="w-full max-w-sm">
+      <CardHeader>
+        <CardTitle>Login to your account</CardTitle>
+        <CardDescription>
+          Enter your email below to login to your account
+        </CardDescription>
+        <CardAction>
+          <Button variant="link">Sign Up</Button>
+        </CardAction>
+      </CardHeader>
+      <CardContent>
+        <form>
+          <div className="flex flex-col gap-6">
+            <div className="grid gap-2">
+              <Label htmlFor="email">Email</Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="m@example.com"
+                required
+              />
             </div>
-        </div>
-    );
+            <div className="grid gap-2">
+              <div className="flex items-center">
+                <Label htmlFor="password">Password</Label>
+                <a
+                  href="#"
+                  className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                >
+                  Forgot your password?
+                </a>
+              </div>
+              <Input id="password" type="password" required />
+            </div>
+          </div>
+        </form>
+      </CardContent>
+      <CardFooter className="flex-col gap-2">
+        <Button type="submit" className="w-full">
+          Login
+        </Button>
+        <Button variant="outline" className="w-full">
+          Login with Google
+        </Button>
+      </CardFooter>
+    </Card>
+      </div>
+    </div>
+  );
 }
-            
