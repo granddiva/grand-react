@@ -29,6 +29,15 @@ export default function Sidebar() {
       <NavLink to="/customers" className={menuClass}>
         Customers
       </NavLink>
+
+      <NavLink to="/FiturXyz" className={menuClass}>
+        Fitur Xyz
+      </NavLink>
+
+      <NavLink to="/component" className={menuClass}>
+        component
+      </NavLink>
+    
     </div>
   );
 }

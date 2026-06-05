@@ -10,6 +10,7 @@ import ErrorPage from "./pages/ErrorPage";
 import NotFound from "./pages/NotFound";
 import Products from "./pages/Products";
 import React from "react";
+import FiturXyz from "./pages/FiturXyz";
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
+           <Route path="/FiturXyz" element={<FiturXyz />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
 
